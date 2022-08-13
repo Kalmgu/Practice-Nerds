@@ -9,6 +9,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Нёрдс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
@@ -16,7 +19,7 @@
     <div class="container">
       <nav class="main-navigation">
         <a href="/">
-          <img src="img/logotype-nerds.png" width="160" height="65" alt="Логотип Нёрдс">
+          <img class="main-navigation-logotype-img" src="img/logotype-nerds.png" width="160" height="65" alt="Логотип Нёрдс">
         </a>
         <ul class="main-navigation-list">
           <li class="main-navigation-item"><a href="" class="main-navigation-link">Студия</a></li>
@@ -24,19 +27,32 @@
           <li class="main-navigation-item"><a href="" class="main-navigation-link">Магазин</a></li>
           <li class="main-navigation-item"><a href="" class="main-navigation-link">Контакты</a></li>
         </ul>
+        <div class="user-navigation">
+          <a class="user-navigation-cart" href="#">
+            Корзина
+          </a>
+        </div>  
       </nav>
     </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Интернет-магазин Нёрдс</h1>
-    <div class="container">
-      <!-- Слайдер преимуществ -->
-      <section class="slider-advantages">
-        <h2 class="visually-hidden">Слайдер-преимуществ</h2>
+    <!-- Слайдер преимуществ -->
+    <section class="slider-advantages">
+      <h2 class="visually-hidden">Слайдер-преимуществ</h2>
+      <div class="container">
         <section class="slide-1 slide">
-          <h3 class="slide-title">Долго, дорого, скрупулезно.</h3>
-          <p class="slide-subtitle">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="slide-button button">Узнать больше</a>
+          <div class="slide-left-box">
+            <h3 class="slide-title">Долго, дорого, скрупулезно.</h3>
+            <p class="slide-subtitle">
+              Математически выверенный дизайн<br>
+              для вашего сайта или мобильного приложения.
+            </p>
+            <a class="slide-button button" href="#">Узнать больше</a>
+          </div>
+          <div class="slide-right-box"> 
+            <img src="img/slider/slide-1.png" width="760" height="431" alt="Картинка слайда №1">
+          </div>  
         </section>
         <section class="slide-2 slide">
           <h3 class="slide-title">Любим математику как никто другой</h3>
@@ -48,7 +64,9 @@
           <p class="slide-subtitle">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
           <a class="slide-button button">Узнать больше</a>
         </section>
-      </section>
+      </div>  
+    </section>
+    <div class="container">
       <!-- Услуги -->
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
