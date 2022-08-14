@@ -324,9 +324,46 @@
 
 .about-services-item {
   padding-left: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
+.about-box-right {
+  max-width: 360px;
+}
+
+.about-box-right p {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 37px 0 31px 0;
+}  
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-box-right dl {
+  margin: 0;
+}
+
+.about-box-right dt {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+  color: #000000;
+}
+
+.about-box-right sup {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.about-box-right dd {
+  margin: 0;
+  line-height: 18px;
+  color: #283136;
+}
 
 
 /* Clients */
@@ -402,7 +439,7 @@
 }
 
 .container-contacts a:hover,
-.container-contacts a:active {
+.container-contacts a:focus {
   color: #E74246;
   text-decoration: underline;
 }
@@ -418,7 +455,8 @@
 }
 
 .container-contacts button:hover {
-  background: E74246;
+  background: #E74246;
+  cursor: pointer;
 }
 
 /* Socials */
