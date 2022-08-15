@@ -27,7 +27,9 @@
 
 /* Global */
 
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -338,16 +340,16 @@
   margin: 37px 0 31px 0;
 }  
 
-.flex {
+/* .flex {
   display: flex;
   justify-content: space-between;
 }
 
 .about-box-right dl {
   margin: 0;
-}
+} */
 
-.about-box-right dt {
+.about-box-right tr:first-child {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
