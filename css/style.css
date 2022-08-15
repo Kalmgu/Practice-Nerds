@@ -116,6 +116,7 @@
 
 .main-navigation-link,
 .user-navigation-cart {
+  display: block;
   margin-right: 45px;
   font-weight: 500;
   font-size: 16px;
@@ -144,6 +145,20 @@
 
 .user-navigation-cart {
   margin: 0;
+  position: relative;
+  padding-left: 40px;
+}
+
+.user-navigation-cart::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 0;
+  top: 6px;
+  background-image: url("../img/icon-cart.png");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 /* Slider */
