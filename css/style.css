@@ -47,6 +47,9 @@
 }
 
 .page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
@@ -295,8 +298,6 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-
-
 /* About */
 
 .about {
@@ -340,8 +341,19 @@
 }
 
 .about-services-item {
-  padding-left: 32px;
+  padding-left: 35px;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.about-services-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 25px;
+  height: 2px;
+  background-color: #FB565A;
 }
 
 .about-box-right {
@@ -421,7 +433,11 @@
 .map-and-contacts {
   height: 416px;
   border: 1px solid #FFFFFF;
-  background-color: #757575;
+  background-color: #EEEEEE;
+  background-image: url("../img/map.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .container-contacts {
@@ -533,4 +549,39 @@
 
 .modal {
   display: none;
+}
+
+/* Inner page */
+
+.inner-page-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  margin: 0;
+  margin-bottom: 55px;
+  padding-top: 78px;
+  padding-bottom: 108px;
+  background-color: #EEEEEE;
+  text-align: center;
+}
+
+.inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-cards-list {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  margin-right: 42px;
+  margin-bottom: 32px;
+}
+
+.product-card:nth-child(odd) {
+  margin-right: 0;
 }
